@@ -55,12 +55,37 @@
   .sidebar{
     position: fixed;
     width: calc(18%);
-    top: calc(10%);
+    top: calc(20%);
     background: #000;
     height: calc(100% );
     overflow-x: hidden;
   
    }
+  
+  .Menu
+  { 
+    float: left; 
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  font-family:'Poppins', sans-serif;
+  }
+
+  .grid
+  {
+    border: #fff;
+    
+  }
+  .ct {
+    background-color: rgb(250, 241, 241) ;
+    text-align: center;
+    font-size: 19px;
+    padding: calc(10%);
+    border-radius: 10px;
+    font-family:'Poppins', sans-serif;
+    margin: 10px;
+  }
+
   
   /* .sidebar {
     width: 15%;
@@ -71,7 +96,7 @@
     background-color: rgb(66, 64, 64);
     height: 100%;
   } */
-
+/* 
   .sidebar .sidebarcol{
     padding-left: 10px;
     padding-top: calc(15%);
@@ -80,12 +105,12 @@
     font-family:'Poppins', sans-serif;
    }
 
-  /* .sb-item a{
+  .sb-item a{
     margin: 100px;
     background-color: #fff;
     width: calc(50%);
 
-  } */
+  }
 
   .sidebarcol a {
     float: left;
@@ -101,4 +126,4 @@
   .Menu{
     float: left;
     color: #fff;
-  }
+  } */
