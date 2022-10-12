@@ -109,9 +109,11 @@ nav.open ~ .overlay {
   left: 260px;
   pointer-events: auto;
 }
-.main{
+ .main{
     margin-top: 70px;
+    margin-left: 100px;
 }
+/*
 .main .heading{
     text-align: center;
     font-size: 30px;
@@ -146,4 +148,4 @@ nav.open ~ .overlay {
     flex-grow: 0;
     max-width: 100%;
     flex-basis: 100%;
-}
+} */
