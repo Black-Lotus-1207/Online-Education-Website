@@ -109,3 +109,41 @@ nav.open ~ .overlay {
   left: 260px;
   pointer-events: auto;
 }
+.main{
+    margin-top: 70px;
+}
+.main .heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+}
+.content {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .videos  {
+    margin: 2px;
+    width: 100px;
+  }
+
+  .jss897 {
+    padding-top: 24px;
+}
+.jss897 {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.content {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+}
