@@ -18,7 +18,7 @@ nav {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	background: #f6f6f2;
+	background: #a2b6f7;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,8 +99,4 @@ nav ul li a:hover {
 .svg-image img {
 	width: 800px;
 	filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.4));
-}
-
-.jss901{
-	
 }

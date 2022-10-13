@@ -5,10 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
 }
 body {
   min-height: 100%;
-  background: #edf6ff;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
 }
 nav {
   position: fixed;
@@ -18,7 +19,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  background: #f6f6f2;
+  background: #e2f0f9;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 nav .logo {
@@ -113,39 +114,203 @@ nav.open ~ .overlay {
     margin-top: 70px;
     margin-left: 100px;
 }
-/*
-.main .heading{
-    text-align: center;
-    font-size: 30px;
-    margin: 5px;
-}
-.content {
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .videos  {
-    margin: 2px;
-    width: 100px;
-  }
 
-  .jss897 {
-    padding-top: 24px;
+nav .profile-details{
+  margin-left: calc(75%);
+  display: flex;
+  align-items: center;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
 }
-.jss897 {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    justify-content: space-around;
+nav .profile-details img{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  object-fit: cover;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+nav .profile-details .admin_name{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
 }
-.content {
-    flex-grow: 0;
-    max-width: 100%;
-    flex-basis: 100%;
-} */
+ 
+.dash-content .title{
+  display: flex;
+  align-items: center;
+  margin: 60px 0 30px 0;
+}
+.dash-content .title i{
+  position: relative;
+  height: 35px;
+  width: 35px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.dash-content .title .text{
+  margin-top: 3%;
+  font-size: 34px;
+  font-weight: 500;
+  color: var(#000);
+  margin-left: 10px;
+}
+.dash-content .boxes{
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dash-content .boxes .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  width: calc(100% / 3 - 15px);
+  padding: 15px 20px;
+  background-color: var(#000C66);
+}
+
+.boxes .box .text{
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(#000);
+  box-shadow: #000C66(5,5,5,5);
+}
+.boxes .box .number{
+  font-size: 40px;
+  font-weight: 500;
+  color: var(#000);
+}
+
+.dash-content .activity .activity-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.activity .activity-data{
+  display: flex;
+}
+.activity-data .data{
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.activity-data .data-title{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.activity-data .data .data-list{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  white-space: nowrap;
+  color: var(--text-color);
+}
+
+@media (max-width: 1000px) {
+  nav{
+      width: 73px;
+  }
+  nav.close{
+      width: 250px;
+  }
+  nav .logo_name{
+      opacity: 0;
+      pointer-events: none;
+  }
+  nav.close .logo_name{
+      opacity: 1;
+      pointer-events: auto;
+  }
+  nav li a .link-name{
+      opacity: 0;
+      pointer-events: none;
+  }
+  nav.close li a .link-name{
+      opacity: 1;
+      pointer-events: auto;
+  }
+  nav ~ .dashboard{
+      left: 73px;
+      width: calc(100% - 73px);
+  }
+  nav.close ~ .dashboard{
+      left: 250px;
+      width: calc(100% - 250px);
+  }
+  nav ~ .dashboard .top{
+      left: 73px;
+      width: calc(100% - 73px);
+  }
+  nav.close ~ .dashboard .top{
+      left: 250px;
+      width: calc(100% - 250px);
+  }
+  .activity .activity-data{
+      overflow-X: scroll;
+  }
+}
+
+@media (max-width: 780px) {
+  .dash-content .boxes .box{
+      width: calc(100% / 2 - 15px);
+      margin-top: 15px;
+  }
+}
+@media (max-width: 560px) {
+  .dash-content .boxes .box{
+      width: 100% ;
+  }
+}
+@media (max-width: 400px) {
+  nav{
+      width: 0px;
+  }
+  nav.close{
+      width: 73px;
+  }
+  nav .logo_name{
+      opacity: 0;
+      pointer-events: none;
+  }
+  nav.close .logo_name{
+      opacity: 0;
+      pointer-events: none;
+  }
+  nav li a .link-name{
+      opacity: 0;
+      pointer-events: none;
+  }
+  nav.close li a .link-name{
+      opacity: 0;
+      pointer-events: none;
+  }
+  nav ~ .dashboard{
+      left: 0;
+      width: 100%;
+  }
+  nav.close ~ .dashboard{
+      left: 73px;
+      width: calc(100% - 73px);
+  }
+  nav ~ .dashboard .top{
+      left: 0;
+      width: 100%;
+  }
+  nav.close ~ .dashboard .top{
+      left: 0;
+      width: 100%;
+  }
+}
