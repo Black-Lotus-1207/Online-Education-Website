@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #questions{
-            font-size: 30px;
-        }
-        h1{
-            color: greenyellow;
-            font-size: 75px;
-        }
-        .option{
-            border: 2px solid black;
-            height: 40px;
-            width: 300px;
-            font-size: 30px;
-        }
-        .correctoption{
-            border: 2px solid green;
-            height : 40px;
-            width : 300px;
-            font-size: 30px;
-        }
+      * {
+        background-color: black;
+      }
+
+      #questions {
+        font-size: 30px;
+        color: white;
+        margin: 2px;
+        padding: 4px;
+      }
+      h1 {
+        color: greenyellow;
+        font-size: 75px;
+        margin: auto;
+        padding: 4px;
+      }
+      .option {
+        border: 5px solid white;
+        height: 40px;
+        width: 630px;
+        font-size: 30px;
+        margin: 25px;
+        padding: 20px;
+        color: white;
+        border-radius: 30px;
+      }
+      .option :hover{
+        background-color: blue;
+      }
+      .correctoption {
+        border: 5px solid green;
+        height: 40px;
+        width: 630px;
+        font-size: 30px;
+        margin: 25px;
+        padding: 20px;
+        color: white;
+        border-radius: 30px;
+      }
+      .btn1 {
+        background-color: rgba(147, 126, 242, 0.998);
+        font-size: 18px;
+        float: left;
+      }
+      .btn2 {
+        background-color: rgba(147, 126, 242, 0.998);
+        font-size: 18px;
+        float: right;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="head">It's QUIZ TIME</h1>
-    <div id="questions">Q) Which of these is not the seven wonders of the World </div>
-    <div class="correctoption">1)Gate way of India</div>
-    <div class="option">2)Great Wall of China</div>
-    <div class="option">3)Colosseum
+    <div id="questions">
+      Q) Which of these is not the seven wonders of the World
     </div>
-    <div class="option">4)Petra</div>
-   
-</body>
+    <div class="alloptions">
+      <div class="correctoption">1)Gate way of India</div>
+      <div class="option">2)Great Wall of China</div>
+      <div class="option">3)Colosseum</div>
+      <div class="option">4)Petra</div>
+    </div>
+    <button class="btn1" id="1">pervious</button>
+    <button class="btn2" id="2">next</button>
+  </body>
 </html>
