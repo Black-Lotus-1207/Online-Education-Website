@@ -12,8 +12,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: white;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
 
 }
 .center h1{
@@ -25,6 +27,7 @@ body{
 .center form{
     padding: 0 40px;
     box-sizing: border-box;
+
 }
 form .txt_field{
     position: relative;
