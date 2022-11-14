@@ -10,31 +10,36 @@
 <body>
     <div class="center">
         <h1>Signup</h1>
-            <form action="dashboard.html">
+        <div class="alert">Your message has been sent</div>
+            <form id="registrationform">
             <div class="txt_field">
-                <input type="text" required placeholder="First Name">
+                <input type="text" required placeholder="First Name" id="firstname">
             </div>
             <div class="txt_field">
-                <input type="text" required placeholder="Last Name">
+                <input type="text" required placeholder="Last Name" id="lastname">
             </div>
             <div class="txt_field">
-                <input type="email" required placeholder="Email">
+                <input type="email" required placeholder="Email" id="email">
             </div>
             <div class="txt_field">
-                <input type="number" required placeholder="Student id">
+                <input type="number" required placeholder="Student id" id="studentid">
             </div>
             <div class="txt_field">
-                <input type="number" required placeholder="Phone No">
+                <input type="number" required placeholder="Phone No" id="phoneno">
             </div>
             <div class="txt_field">
-                <input type="password" required placeholder="Password">
+                <input type="password" required placeholder="Password" id="password">
             </div>
             <div class="txt_field">
-                <input type="password" required placeholder="Confirm Password">
+                <input type="password" required placeholder="Confirm Password" id="cpassword">
             </div>
-            <input type="submit" value="Register">
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
            
         </form>
     </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+    <script src="./mail.js"></script>
 </body>
 </html>
